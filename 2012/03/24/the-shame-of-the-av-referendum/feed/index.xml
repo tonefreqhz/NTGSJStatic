@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: The shame of the AV referendum.	</title>
+	<atom:link href="/2012/03/24/the-shame-of-the-av-referendum/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/03/24/the-shame-of-the-av-referendum/</link>
+	<description>Exegesis Hermeneutics Flux Capacitor of Truthiness</description>
+	<lastBuildDate>Sat, 24 Mar 2012 05:06:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>
+		By: RogerGLewis		</title>
+		<link>/2012/03/24/the-shame-of-the-av-referendum/comment-page-1/#comment-21</link>
+
+		<dc:creator><![CDATA[RogerGLewis]]></dc:creator>
+		<pubDate>Sat, 24 Mar 2012 05:06:17 +0000</pubDate>
+		<guid isPermaLink="false">/2012/03/24/the-shame-of-the-av-referendum#comment-21</guid>
+
+					<description><![CDATA[May 1, 2011 Roger Glyndwr Lewis]]></description>
+			<content:encoded><![CDATA[<p>May 1, 2011 Roger Glyndwr Lewis</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: RogerGLewis		</title>
+		<link>/2012/03/24/the-shame-of-the-av-referendum/comment-page-1/#comment-20</link>
+
+		<dc:creator><![CDATA[RogerGLewis]]></dc:creator>
+		<pubDate>Sat, 24 Mar 2012 05:05:40 +0000</pubDate>
+		<guid isPermaLink="false">/2012/03/24/the-shame-of-the-av-referendum#comment-20</guid>
+
+					<description><![CDATA[letter writtenay 1, 2011Roger Glyndwr Lewis]]></description>
+			<content:encoded><![CDATA[<p>letter writtenay 1, 2011Roger Glyndwr Lewis</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
