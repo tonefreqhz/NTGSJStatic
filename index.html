@@ -10,7 +10,7 @@
   WebFontConfig = {"google":{"families":["Gentium+Book+Basic:r,i,b,bi:latin,latin-ext","Space+Mono:r:latin,latin-ext"]}};
   (function() {
     var wf = document.createElement('script');
-    wf.src = 'https://notthegrubstreetjournal.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
@@ -233,6 +233,38 @@ img.emoji {
 <link rel="apple-touch-icon" href="https://i0.wp.com/notthegrubstreetjournal.com/wp-content/uploads/2019/07/cropped-sgrub-street-questiontagelection_999005.jpg?fit=180%2C180&#038;ssl=1">
 <meta name="msapplication-TileImage" content="https://i0.wp.com/notthegrubstreetjournal.com/wp-content/uploads/2019/07/cropped-sgrub-street-questiontagelection_999005.jpg?fit=270%2C270&#038;ssl=1">
 <!-- Your Google Analytics Plugin is missing the tracking ID -->
+
+<!-- NTGSJ Static Site Fixes -->
+<style type="text/css">
+/* Fix blue-on-blue secondary nav */
+.boxwp-nav-secondary { background: #1a1a2e !important; }
+.boxwp-secondary-nav-menu a { color: #e0e0e0 !important; text-shadow: none !important; }
+.boxwp-secondary-nav-menu a:hover,
+.boxwp-secondary-nav-menu .current-menu-item > a { color: #ffffff !important; background: #2d2d5e !important; }
+.boxwp-secondary-nav-menu .sub-menu,
+.boxwp-secondary-nav-menu .children { background: #1a1a2e !important; }
+
+/* Fix heading readability — keep blue but ensure contrast */
+h1, h2, h3, h4, h5, h6 { color: #072ac4 !important; }
+.boxwp-grid-post-title a { color: #072ac4 !important; }
+
+/* Ensure lazy images display */
+img.jetpack-lazy-image { display: block !important; }
+</style>
+<script>
+/* Replace dead Jetpack lazy-loader */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('img[data-lazy-src]').forEach(function(img) {
+    if (img.dataset.lazySrc) {
+      img.src = img.dataset.lazySrc.replace('&is-pending-load=1', '');
+    }
+    if (img.dataset.lazySrcset) img.srcset = img.dataset.lazySrcset;
+    if (img.dataset.lazySizes) img.sizes = img.dataset.lazySizes;
+    img.classList.remove('jetpack-lazy-image');
+    img.classList.add('jetpack-lazy-image--handled');
+  });
+});
+</script>
 </head>
 
 <body class="home blog custom-background wp-custom-logo boxwp-animated boxwp-fadein boxwp-body-full-width boxwp-header-full-width" id="boxwp-site-body" itemscope="itemscope" itemtype="http://schema.org/WebPage">
